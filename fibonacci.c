@@ -3,26 +3,26 @@
 #include "stdio.h"
 
 void main() { 
-int a, b, aux, i, n; 
+    int a, b, aux, i, n; 
 
-// Assign initial values to the variables
-a = 0; 
-b = 1; 
+    // Assign initial values to the variables
+    a = 0; 
+    b = 1; 
 
-// The function printf() shows on the screen 
-printf("Enter a number: "); 
+    // The function printf() shows on the screen 
+    printf("Enter a number: "); 
 
-// Gets the value entered
-scanf("%d", &n); 
-printf("Fibonacci:\n"); 
-printf("%d\n", b); 
+    // Gets the value entered
+    scanf("%d", &n); 
+    printf("Fibonacci:\n"); 
+    printf("%d\n", b); 
 
-// This block generates a sequence of numbers
-for(i = 0; i < n; i++) { 
-	aux = a + b; 
-	a = b; 
-	b = aux; 
+    // This block generates a sequence of numbers
+    for(i = 0; i < n; i++) { 
+	    aux = a + b; 
+	    a = b; 
+	    b = aux; 
 
-	printf("%d\n", aux); 
-} 
+	    printf("%d\n", aux); 
+    } 
 }
