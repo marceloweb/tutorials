@@ -3,7 +3,8 @@
 #include "stdio.h"
 
 void main() { 
-    int a, b, aux, i, n; 
+    unsigned long long int a, b, aux;
+	unsigned int i, n;
 
     // Assign initial values to the variables
     a = 0; 
@@ -13,16 +14,16 @@ void main() {
     printf("Enter a number: "); 
 
     // Gets the value entered
-    scanf("%d", &n); 
+    scanf("%u", &n); 
     printf("Fibonacci:\n"); 
-    printf("%d\n", b); 
+    printf("1: 1\n"); 
 
     // This block generates a sequence of numbers
-    for(i = 0; i < n; i++) { 
+    for(i = 0; i < n-1; i++) { 
 	    aux = a + b; 
 	    a = b; 
 	    b = aux; 
 
-	    printf("%d\n", aux); 
+	    printf("%u: %llu\n", i+2, aux); 
     } 
 }
